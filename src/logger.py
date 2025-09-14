@@ -7,3 +7,17 @@ logs_path = os.path.join(os.getcwd(), "logs", LOF_FILE)
 
 os.makedirs(logs_path, exist_ok=True)
 
+LOG_FILE_PATH = os.path.join(logs_path, LOF_FILE)
+
+logging.basicConfig(
+    filename=LOG_FILE_PATH,
+    format="[%(asctime)s] %(levelname)s - %(message)s",
+    level=logging.INFO,
+)
+
+if __name__ == "__main__":
+    logging.info("Logging has started.")
+    logging.info("This is an info message.")
+    logging.warning("This is a warning message.")
+    logging.error("This is an error message.")
+    logging.critical("This is a critical message.")
