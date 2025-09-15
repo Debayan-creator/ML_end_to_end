@@ -5,6 +5,10 @@ Author-email: roydebayan2002@gmail.com
 Requires-Dist: pandas
 Requires-Dist: numpy
 Requires-Dist: seaborn
+Requires-Dist: matplotlib
 Requires-Dist: scikit-learn
+Requires-Dist: catboost
+Requires-Dist: xgboost
+Requires-Dist: Flask
 Dynamic: author-email
 Dynamic: requires-dist
